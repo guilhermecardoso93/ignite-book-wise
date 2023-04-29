@@ -4,11 +4,11 @@ import { useRouter } from "next/router";
 import { AuthButton, Container } from "./styles";
 
 type AuthButtonsProps = {
-  canGuest?: boolean;
-  callbackUrl?: string;
-};
+  canGuest?: boolean
+  callbackUrl?: string
+}
 
-export function AuthButtons({ canGuest, callbackUrl = "/" }: AuthButtonsProps) {
+export function AuthButtons ({ canGuest, callbackUrl = "/" }: AuthButtonsProps) {
   const router = useRouter();
 
   const handleSignIn = (provider?: string) => {
